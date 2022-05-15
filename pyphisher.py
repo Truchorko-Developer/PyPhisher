@@ -118,7 +118,7 @@ logo=f'''
 {red} | |   | |_| | |    | | | | \__ \ | | |  __/ |   
 {yellow} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   
 {green}         __/ |                          {cyan}[v1.6]
-{cyan}        |___/                   [By Truchorko_#7777]
+{cyan}        |___/                      | By Truchorko_#7777 |
 '''
 
 pyphisherpyphisherpyphisherpyphisherpyphisher = ""
