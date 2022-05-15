@@ -320,7 +320,7 @@ def sudoinstaller(pm):
 
 # Ask to mask url
 def cuask(url):
-    cust= input("\n"+ask+yellow+"¿Quiere probar el vínculo personalizado? (o presione Intro para omitir) > ")
+    cust= input("\n"+ask+red+"¿Quiere probar el vínculo personalizado? Presionar [y] (o presione Intro para omitir) > ")
     if not cust=="":
         masking(url)
     waiter()
@@ -328,7 +328,7 @@ def cuask(url):
 # Polite Exit
 def pexit():
     killer()
-    sprint("\n"+info2+"Thanks for using!\n"+nc)
+    sprint("\n"+info2+"¡Gracias por Usar >:)!\n"+nc)
     exit(0)
 
 
@@ -878,7 +878,7 @@ def masking(url):
         sprint(error+"Servicio no disponible")
         waiter()
     main= main2.replace("https://", "")
-    domain= input("\n"+ask+"Ingrese un dominio personalizado (Ejemplo: google.com, discord.com etc > ")
+    domain= input("\n"+ask+"Ingrese un dominio personalizado (Ejemplo: google.com, discord.com etc) > ")
     if domain=="":
         sprint("\n"+error+"¡Sin dominio!")
         bait= input("\n"+ask+"Ingrese palabras cebo sin espacio ni guión (Ejemplo: dinero-gratis, pubg-mod) > ")
