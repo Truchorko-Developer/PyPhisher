@@ -57,7 +57,7 @@ logo=f'''
 {red} \__,_|\__|\__\__,_|\__, |\__,_|\___|
 {red}                       |_|
 {red}
-{green}------------------->{cyan} [Version 1.9]
+{green}------------------->{cyan} [Version 1.6]
 {cyan}------------------->{red} [Crado Por {green}Truchorko_#7777{red}]
 {cyan}------------------->{red} [Crado Por {green}KasRoudra #7777{red}]
 {red}
