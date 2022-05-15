@@ -871,7 +871,7 @@ def waiter():
     try:
         while True:
             if os.path.isfile(root+"/.site/usernames.txt"):
-                print("\n\n"+success+bgreen+"Victim login info found!\n\007")
+                print("\n\n"+success+bgreen+"¡Se encontró la información de inicio de sesión de la víctima!\n\007")
                 with open(root+"/.site/usernames.txt","r") as ufile:
                     userdata=ufile.readlines()
                     j=0
