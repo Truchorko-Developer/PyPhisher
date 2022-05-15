@@ -341,7 +341,7 @@ def about():
     print(red+'[Author]    '+cyan+' :[luis498] ')
     print(red+'[Github]    '+cyan+' :[https://github.com/luis498] ')
     print(red+'[Messenger] '+cyan+' :[https://m.me/luis498]')
-    print(red+'[Email]     '+cyan+' :[luis498krd@gmail.com]')
+    print(red+'[Discord]     '+cyan+' :[https://discord.gg/utmuExHwyT]')
     print()
     print(green+'['+white+'0'+green+']'+yellow+' Exit                     '+     green+'['+white+'99'+green+']'+yellow+'  Main Menu       ')
     print()
