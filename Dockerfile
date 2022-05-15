@@ -1,9 +1,9 @@
 # Dockerfile
 
-# Author       : KasRoudra
-# Github       : https://github.com/KasRoudra
-# Messenger    : https://m.me/KasRoudra
-# Email        : kasroudrakrd@gmail.com
+# Author       : luis498
+# Github       : https://github.com/luis498
+# Messenger    : https://m.me/
+# Email        : @gmail.com
 # Date         : 25-08-2021
 # Main Language: Python
 
@@ -15,7 +15,7 @@ FROM debian:10
 FROM python:3
 
 # Author info
-LABEL MAINTAINER="https://github.com/KasRoudra/pyphisher"
+LABEL MAINTAINER="https://github.com/luis498/pyphisher"
 
 # Working directory
 WORKDIR pyphisher/
