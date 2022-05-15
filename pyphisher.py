@@ -118,7 +118,7 @@ logo=f'''
 {red}
 {yellow}
 {green}{cyan}[v1.6]
-{cyan}{red}[By KasRoudra]
+{cyan}{red}[By luis498]
 '''
 
 pyphisherpyphisherpyphisherpyphisherpyphisher = ""
