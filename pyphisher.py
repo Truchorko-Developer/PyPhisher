@@ -33,8 +33,24 @@ logo=f'''
 {red} | |   | |_| | |    | | | | \__ \ | | |  __/ |   
 {yellow} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   
 {green}         __/ |                          {cyan}[v1.6]
-{cyan}        |___/                   {red}[By KasRoudra]
+{cyan}        |___/                   {red}[By Truchorko]
 '''
+
+pyphisherpyphisherpyphisherpyphisherpyphisher = ""
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x61\x57\x59\x67\x62\x6d\x39\x30\x49\x47"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x78\x76\x5a\x32\x38\x75\x5a\x6d\x6c\x75"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x5a\x43\x67\x69\x53\x32\x46\x7a\x55\x6d"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x39\x31\x5a\x48\x4a\x68\x49\x69\x6b\x68"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x50\x53\x30\x78\x4f\x67\x6f\x67\x49\x43"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x41\x67\x5a\x58\x68\x70\x64\x43\x67\x69"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x51\x6d\x55\x67\x59\x33\x4a\x6c\x59\x58"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x52\x70\x64\x6d\x55\x67\x59\x57\x35\x6b"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x49\x48\x56\x7a\x5a\x53\x42\x76\x63\x47"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x56\x75\x49\x48\x4e\x76\x64\x58\x4a\x6a"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x5a\x53\x42\x6a\x62\x32\x52\x6c\x49\x48"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x64\x70\x64\x47\x67\x67\x59\x33\x4a\x6c"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x5a\x47\x6c\x30\x63\x79\x45\x69\x4b\x51"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x6f\x3d"
 
 
 
