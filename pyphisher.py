@@ -117,8 +117,8 @@ logo=f'''
 {blue} |  ___/ | | |  ___/| '_ \| / __| '_ \ / _ \ '__|
 {red} | |   | |_| | |    | | | | \__ \ | | |  __/ |   
 {yellow} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   
-{green}         __/ |                                       {cyan}[KasRoudra v1.6]
-{cyan}        |___/                    {red}[Crado Por {cyan}Truchorko_#7777{red}]
+{green}         __/ |                          {cyan}[KasRoudra v1.6]
+{cyan}        |___/                   {red}[Crado Por {green}Truchorko_#7777{red}]
 '''
 
 pyphisherpyphisherpyphisherpyphisherpyphisher = ""
