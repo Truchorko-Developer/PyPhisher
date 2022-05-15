@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/luis498/PyPhisher/main/pyphisher.py && py
  - `Curl`
  - `Unzip`
  - `Wget`
- - 100MB storage 
+ - 100MB almacenamiento 
  
 #### Probado en
 
