@@ -33,7 +33,7 @@ logo=f'''
 {red} | |   | |_| | |    | | | | \__ \ | | |  __/ |   
 {yellow} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   
 {green}         __/ |                          {cyan}[v1.6]
-{cyan}        |___/
+{cyan}        |___/                   {red}[By KasRoudra]
 '''
 
 pyphisherpyphisherpyphisherpyphisherpyphisher = ""
