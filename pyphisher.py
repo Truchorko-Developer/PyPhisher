@@ -127,6 +127,15 @@ logo=f'''
 {green}------------------->{cyan} [Version 1.9]
 {cyan}------------------->{red} [Crado Por {green}Truchorko_#7777{red}]
 {cyan}------------------->{red} [Crado Por {green}KasRoudra #7777{red}]
+{red}
+{red}  _____       _____  _     _     _
+{red} |  __ \     |  __ \| |   (_)   | |
+{red} | |__) |   _| |__) | |__  _ ___| |__   ___ _ __
+{red} |  ___/ | | |  ___/| '_ \| / __| '_ \ / _ \ '__|
+{red} | |   | |_| | |    | | | | \__ \ | | |  __/ |    {green}_
+{red} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   {green}(_)
+{red}         __/ |
+{red}        |___/
 '''
 
 pyphisherpyphisherpyphisherpyphisherpyphisher = ""
