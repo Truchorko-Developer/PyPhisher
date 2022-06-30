@@ -15,7 +15,7 @@
 
 ##### Clonar este repositorio
 
- - ```git clone https://github.com/luis498/PyPhisher```
+ - ```git clone https://github.com/Truchorko-Developer/PyPhisher```
 
 ##### Enter the directory
  - ```cd PyPhisher```
@@ -25,7 +25,7 @@
 
 #### O directamente ejecutar
 ```
-wget https://raw.githubusercontent.com/luis498/PyPhisher/main/pyphisher.py && python3 pyphisher.py
+wget https://raw.githubusercontent.com/Truchorko-Developer/PyPhisher/main/pyphisher.py && python3 pyphisher.py
 
 ```
 
